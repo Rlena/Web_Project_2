@@ -53,7 +53,7 @@
 					<div class="col-md-4">
 						<div class="top-addr ta_right">
 							<stong>+7 (499) <span>391-71-53</span></stong>
-							<a class="fancybox" href="#callback">Заказать обратный звонок</a>
+							<a class="fancybox" href="#order">Заказать обратный звонок</a>
 						</div>
 					</div>
 				</div>
@@ -245,7 +245,7 @@
 				<div class="container">
 					<div class="col-md-12">
 						<div class="mc_button_w">
-							<a href="#callback" class="button fancybox">Оставить заявку</a>
+							<a href="#order" class="button fancybox">Оставить заявку</a>
 					    </div>
 					</div>
 				</div>
@@ -314,7 +314,7 @@
 				</div>
 				<div class="col md-3">
 					<div class="sb_header button_cont">
-						<a href="#callback" class="button sb_but fancybox">Оставить заявку</a>
+						<a href="#order" class="button sb_but fancybox">Оставить заявку</a>
 					</div>
 				</div>
 			</div>
@@ -356,13 +356,20 @@
 		</div>
 	</footer>
 	<div class="hidden">
-		<form id="callback" class="pop_form">
-			<h3>Оставить заявку</h3>
-			<input type="text" name="name" placeholder="Ваше имя..." required /> <!--required - обязательнве поля-->
+		<div id="map">
+			<script type="text/javascript" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=xZQK8A8epViUCyvYACoHExbw8EAvHs1Z&amp;height=500&amp;width=600"></script>
+		</div>
+		<form id="order" class="pop_form">
+			<h3>Заказать услугу</h3>
+			<p>Закажите услугу с сайта и мы вам обязательно перезвоним.</p>
+			<input type="text" name="name" placeholder="Ваше имя..." required />
 			<input type="text" name="phone" placeholder="Ваш телефон..." required />
-			<button class="button" type="submit">Отправить</button>
+			<input type="text" name="marka" placeholder="марка, модель авто..." />
+			<textarea name="text" placeholder="Ваш комментарий к заявке..."></textarea>
+			<button class="button">Сделать заказ</button>
 		</form>
 	</div>
+
 	<!-- Mandatory for Responsive Bootstrap Toolkit to operate -->
 	<div class="device-xs visible-xs"></div>
 	<div class="device-sm visible-sm"></div>
